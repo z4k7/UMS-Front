@@ -1,0 +1,35 @@
+.background-container {
+    /* Set the background image URL */
+    background-image: url('../../background/userprofile.jpg');
+    /* Set the background image size, repeat, and position as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-top: 30vh;
+    
+    /* Set the container height and other styles as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+
+/* Additional styles for the image container */
+.image-container {
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Additional styles for the user information container */
+.user-info-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}

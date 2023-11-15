@@ -1,0 +1,15 @@
+.background-container {
+    background-image: url('../../background/createuser.jpg');
+    background-size: cover;
+    background-position-y: bottom;
+    height:100vh;
+    padding-top: 35vh;
+}
+.h3 {
+    color: yellow; /* Set the default text color */
+    transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+}
+
+ .h3:hover {
+    color: aquamarine /* Set the color you want when hovering */
+}

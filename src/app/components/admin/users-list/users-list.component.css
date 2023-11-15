@@ -1,0 +1,26 @@
+.background-container {
+    background-image: url('../../background/usrlist2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* Additional styling for the form-signin */
+.form-signin {
+    padding-top: 70px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    color: white;
+}
+
+.h3 {
+    color: white; /* Set the default text color */
+    transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+}
+
+ .h3:hover {
+    color: orangered /* Set the color you want when hovering */
+}

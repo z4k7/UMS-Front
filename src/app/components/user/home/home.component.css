@@ -1,0 +1,26 @@
+.background-image-container{
+    background-image: url('../../background/userhome.jpg');
+      /* Set the background image size, repeat, and position as needed */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      /* Set the container height and other styles as needed */
+      height: 100vh;
+      padding-top: 7vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+}
+
+   /* Additional styles for the text */
+   .text-container {
+     /* background-color: rgba(255, 255, 255, 0.8); Set a background color for text readability */
+    
+     padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+.textstyle{
+  color: antiquewhite;
+}

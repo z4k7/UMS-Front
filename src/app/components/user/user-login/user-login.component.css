@@ -1,0 +1,22 @@
+.background-container {
+    /* Set the background image URL */
+    background-image: url('../../background/userlogin2.jpg');
+    /* Set the background image size, repeat, and position as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Set the container height and other styles as needed */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15vh;
+}
+
+/* Additional styles for the form */
+.form-signin {
+    color:white;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}

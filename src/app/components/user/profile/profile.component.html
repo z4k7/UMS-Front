@@ -1,0 +1,19 @@
+<app-user-nav></app-user-nav>
+
+<div class="background-container " >
+   
+
+    <div class="d-flex" style="width: 100%; justify-content: center;">
+    <div class="image-container">
+        <img [src]='"http://localhost:3000/images/" + img' alt="User Profile" width="200px" height="200px">
+    </div>
+    <div class="user-info-container">
+    <h3>Name:{{name}}</h3>
+    <h5>Email: {{email}} </h5>
+    </div>
+    </div>
+    <div style="display: flex; width: 100%; justify-content: center; margin-top: 30px;">
+        <input style="color: antiquewhite;" type="file" name="image" (change)="onFileSelected($event)">
+        <button class="btn btn-warning" (click)="onSubmit()">Upload</button>
+        </div>
+</div>

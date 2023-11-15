@@ -1,0 +1,25 @@
+<app-user-nav></app-user-nav>
+<div class="background-container">
+    <form [formGroup]="form" (submit)="onSubmit()" class="form-signin col-4">
+        <h1 class="h3 mb-3 fw-normal text-center">Sign Up</h1>
+
+        <input type="text" formControlName="name" class="form-control my-2" placeholder="Name">
+        <div *ngIf="isSubmitted && f['name'].errors">
+            <div *ngIf="f['name'].errors['required']" style="color:red">Name is required</div>
+        </div>
+
+        <input type="email" formControlName="email" class="form-control" placeholder="Email">
+        <div *ngIf="isSubmitted && form.controls['email'].errors" >
+            <div *ngIf="form.controls['email'].errors['required']" style="color:red">Email is required</div>
+            <div *ngIf="form.controls['email'].errors['email']" style="color:red">Invalid email format</div>
+        </div>
+
+        <input type="password" formControlName="password" class="form-control my-2" placeholder="Password">
+        <div *ngIf="isSubmitted && f['password'].errors">
+            <div *ngIf="f['password'].errors['required']" style="color:red">Password is required</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center" >
+            <button class="w-30 btn btn-lg btn-primary " type="submit">Sign Up</button>
+        </div>
+    </form>
+</div>

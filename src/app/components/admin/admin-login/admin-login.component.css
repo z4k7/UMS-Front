@@ -1,0 +1,21 @@
+.background-container {
+    background-image: url('../../background/adminlogin.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-bottom: 17vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3 {
+    color: yellow; /* Set the default text color */
+    transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+}
+
+ .h3:hover {
+    color: orangered; /* Set the color you want when hovering */
+}
+

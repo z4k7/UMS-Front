@@ -1,0 +1,19 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="background-container">
+    <form [formGroup]="form" (submit)="onSubmit()" class="form-signin">
+        <h1 class="h3 mb-3 fw-normal text-center" >Edit Profile</h1>
+
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <input type="text" formControlName="name" class="form-control w-50 my-2" value="{{userName}}" required>
+            <div *ngIf="isSubmitted && f['name'].errors">
+                <div *ngIf="f['name'].errors['required']" style="color: red;">Name is required</div>
+            </div>
+            <div class="flex text-center">
+
+                <button class="w-20  btn btn-lg btn-primary">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,42 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="background-container">
+<div class="form-signin">
+    <h3 class="text-center h3">Users List</h3>
+</div>
+
+<div class="search ">
+    <div class="input-group d-flex align-items-center justify-content-center my-3 ">
+<input [ngStyle]="{'height':'38px'}" placeholder="Search" type="text"  [(ngModel)]="searchText" class="input" (input)="search()">
+    </div>
+</div>
+
+<div class="container">
+    <table class="table text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">SI</th>
+                <th scope="col">Profile</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="filteredUsers.length">
+        <tr *ngFor="let user of filteredUsers; let i = index">
+        <td>{{i+1}} </td>
+        <td>
+            <p *ngIf="!user.image">N/A</p>
+            <img *ngIf="user.image" class="rounded-circle" [src]='"http://localhost:3000/images/" +user.image' alt="User Profile" width="40px" height="40px">
+        </td>
+        <td>{{user.name}} </td>
+        <td>{{user.email}} </td>
+        <td>
+            <button class="btn btn-warning" (click)="editUser(user._id)" style="margin-right: 10px;" >Edit</button>
+            <button class="btn btn-danger" (click)="confirmDelete(user._id)">Delete</button>
+        </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>

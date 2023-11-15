@@ -1,0 +1,17 @@
+.background-container {
+    background-image: url('../../background/edituser.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10vh
+  
+}
+
+.h3 {
+    color: yellow; /* Set the default text color */
+    transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+}
+
+ .h3:hover {
+    color: orangered /* Set the color you want when hovering */
+}

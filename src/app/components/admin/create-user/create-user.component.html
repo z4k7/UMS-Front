@@ -1,0 +1,30 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="background-container">
+<form [formGroup]="form" (submit)="onSubmit()" class="form-signin" >
+<h1 class="h3 mb-3 fw-normal text-center"  >Add User</h1>
+
+<div class="container d-flex flex-column justify-content-center align-items-center">
+<input formControlName="name" type="text" class="form-control w-50 my-2 " placeholder="Name">
+<div *ngIf="isSubmitted && f['name'].errors">
+    <div *ngIf="f['name'].errors['required']" style="color: red;" >Name is required</div>
+</div>
+
+<input type="email" formControlName="email" class="form-control w-50 " placeholder="Email">
+<div *ngIf="isSubmitted && form.controls['email'].errors">
+    <div *ngIf="f['email']?.errors?.['required']" style="color: red;" >Email is required</div>
+    <div *ngIf="f['email']?.errors?.['email']" style="color: red;" >Invalid email format</div>
+</div>
+
+<input type="password" formControlName="password" class="form-control w-50 my-2" placeholder="Password">
+<div *ngIf="isSubmitted && f['password'].errors">
+<div *ngIf="f['password'].errors['required']"  style="color: red;">Password is required</div>
+</div>
+<div class="text-center">
+
+    <button class="w-30 btn btn-lg btn-primary" type="submit" >Submit</button>
+</div>
+</div>
+</form>
+
+</div>
